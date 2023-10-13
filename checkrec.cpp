@@ -5,9 +5,9 @@
 
 checkrec::checkrec()
 {
-    static QRegularExpression re("Dat");
+    static QRegularExpression variabel("Dit");
     QString dat = "Dit";
-    QRegularExpressionMatch match = re.match(dat);
+    QRegularExpressionMatch match = variabel.match(dat);
     if (match.hasMatch() == true)
     {
         qDebug() << "Match";
