@@ -5,7 +5,7 @@
 
 checkrec::checkrec()
 {
-    static QRegularExpression variabel("^test$");
+    static QRegularExpression variabel("(<) | (>) | (\\\\)");
     QString dat = "Dit is een test";
     QRegularExpressionMatch match = variabel.match(dat);
     if (match.hasMatch() == true)
