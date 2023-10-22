@@ -5,7 +5,7 @@
 
 checkrec::checkrec()
 {
-    static QRegularExpression variabel("&|<|>|\\\\| |\/");
+    static QRegularExpression variabel("&|<|>|\\\\| |/");
     QString dat;
     QTextStream qtin(stdin);
     dat = qtin.readLine();
